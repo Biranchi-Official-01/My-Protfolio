@@ -21,7 +21,7 @@ app.use(
   cors({
     origin: [
       "https://my-protfolio-dashboard.onrender.com", // Dashboard
-      "http://localhost:5174"  // Portfolio
+      "https://biranchinarayanpanda-protfolio.onrender.com"  // Portfolio
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
