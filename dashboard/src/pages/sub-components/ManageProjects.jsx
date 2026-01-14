@@ -21,7 +21,7 @@ const ManageProjects = () => {
   const fetchProjects = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/project/getall",
+        "https://my-protfolio-backend-oy2q.onrender.com/api/v1/project/getall",
         { withCredentials: true }
       );
       setProjects(data.projects);
@@ -52,7 +52,7 @@ const ManageProjects = () => {
   const handleUpdateText = async () => {
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/project/update/${editingProject}`,
+        `https://my-protfolio-backend-oy2q.onrender.com/api/v1/project/update/${editingProject}`,
         {
           title,
           description,
@@ -79,7 +79,7 @@ const ManageProjects = () => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4000/api/v1/project/delete/${id}`,
+        `https://my-protfolio-backend-oy2q.onrender.com/api/v1/project/delete/${id}`,
         { withCredentials: true }
       );
       toast.success(data.message);
@@ -98,7 +98,7 @@ const ManageProjects = () => {
     const toastId = toast.loading("Updating Image...");
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/project/update/${id}`,
+        `https://my-protfolio-backend-oy2q.onrender.com/api/v1/project/update/${id}`,
         formData,
         {
           withCredentials: true,
