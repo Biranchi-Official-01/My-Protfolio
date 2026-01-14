@@ -9,7 +9,7 @@ const Timeline = () => {
     const fetchTimeline = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/timeline/getall",
+          "https://my-protfolio-backend-oy2q.onrender.com/api/v1/timeline/getall",
           { withCredentials: true }
         );
         setTimeline(data.timelines);
