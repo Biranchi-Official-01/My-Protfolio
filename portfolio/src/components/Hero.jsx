@@ -112,7 +112,7 @@ const Hero = () => {
 
                 {/* 👇 LOCAL RESUME LINK (Corrected) */}
                 <a 
-                    href="/Biranchi_cv.pdf"  // <-- DIRECT FILE LINK from public folder
+                    href="/Biranchi_resume.pdf"  // <-- DIRECT FILE LINK from public folder
                     download="Biranchi_Resume.pdf" // Force Download with Name
                     target="_blank"
                     rel="noopener noreferrer"
