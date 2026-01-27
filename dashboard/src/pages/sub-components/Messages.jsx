@@ -11,7 +11,7 @@ const Messages = () => {
   const fetchMessages = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/message/getall",
+        "https://my-protfolio-backend-oy2q.onrender.com/api/v1/message/getall",
         { withCredentials: true }
       );
       setMessages(data.messages);
@@ -26,7 +26,7 @@ const Messages = () => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4000/api/v1/message/delete/${id}`,
+        `https://my-protfolio-backend-oy2q.onrender.com/api/v1/message/delete/${id}`,
         { withCredentials: true }
       );
       toast.success(data.message);

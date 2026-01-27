@@ -20,8 +20,8 @@ dotenv.config({ path: "./.env" });
 app.use(
   cors({
     origin: [
-      "http://localhost:5173", // Dashboard
-      "http://localhost:5174"  // Portfolio
+      "https://my-protfolio-dashboard.onrender.com", // Dashboard
+      "https://biranchinarayanpanda-protfolio.onrender.com"  // Portfolio
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,

@@ -15,7 +15,7 @@ const ManageSkills = () => {
   const fetchSkills = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/softwareapplication/getall",
+        "https://my-protfolio-backend-oy2q.onrender.com/api/v1/softwareapplication/getall",
         { withCredentials: true }
       );
       setSkills(data.softwareApplications);
@@ -37,7 +37,7 @@ const ManageSkills = () => {
 
     try {
       const { data } = await axios.put(
-        `http://localhost:4000/api/v1/softwareapplication/update/${id}`,
+        `https://my-protfolio-backend-oy2q.onrender.com/api/v1/softwareapplication/update/${id}`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" }, withCredentials: true }
       );
@@ -55,7 +55,7 @@ const ManageSkills = () => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:4000/api/v1/softwareapplication/delete/${id}`,
+        `https://my-protfolio-backend-oy2q.onrender.com/api/v1/softwareapplication/delete/${id}`,
         { withCredentials: true }
       );
       toast.success(data.message);

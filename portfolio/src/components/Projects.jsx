@@ -10,7 +10,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/project/getall",
+          "https://my-protfolio-backend-oy2q.onrender.com/api/v1/project/getall",
           { withCredentials: true }
         );
         setProjects(data.projects);

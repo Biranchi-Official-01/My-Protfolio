@@ -18,7 +18,7 @@ const AddTimeline = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/timeline/add",
+        "https://my-protfolio-backend-oy2q.onrender.com/api/v1/timeline/add",
         timelineData,
         {
           headers: { "Content-Type": "application/json" },

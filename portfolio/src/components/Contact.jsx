@@ -15,7 +15,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://my-protfolio-backend-oy2q.onrender.com/api/v1/message/send",
         { senderName: name, subject, message },
         { headers: { "Content-Type": "application/json" } }
       );
